@@ -1,13 +1,95 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.Budgets,.Header,.HeaderExpense,.displAdd{
+  display: flex;
+  justify-content: space-around;
+  color:white;
+  margin:1em
+
+}
+.displBudget,.displRemain,.displSpent{
+  width:10rem;
+  height: 3rem;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border-radius: 0.8em;
+}
+.displBudget{
+  background-color: rgb(235, 168, 168);
+  color:black
+
+}
+.displRemain{
+  background-color: rgb(212, 238, 163);
+  color:green
+}
+.displSpent{
+  background-color: rgb(171, 189, 223);
+  color:blue;
+}
+.items {
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  height: 3rem;
+  margin :0.5rem;
+  color: white;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.Add{
+  width:20rem;
+  height:2rem;
+  border-radius: 1em;
+  color: white;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+.submitButton{
+  width:5rem;
+  height:2.41rem;
+  margin:1rem;
+  background-color: rgb(180, 241, 241);
+  border-radius: 1em;
+  color: black;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+body{
+  background-image: url('https://images.unsplash.com/photo-1676927243424-f055c63497ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDU4fGJvOGpRS1RhRTBZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60');
+  color: white;
+
+
+}
+
+.Header,.HeaderExpense,.displAdd{
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.middleadddelete{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1em;
 }

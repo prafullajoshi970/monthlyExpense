@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import Budget from './component/Budget'
+import Remaining from './component/Remaining'
+import Spent from './component/Spent'
+import List from './component/List';
+import  {Addprop}  from './component/Addprop';
+import  {AppProvider}  from './component/AppContext/AppProvider';
 
 function App() {
   return (
+    <AppProvider>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+   <div className='Header'><h1>My Budget Planner</h1></div>
+   <div className="Budgets">
+   <div className="displBudget"> <Budget ></Budget></div>
+   <div className="displRemain"> <Remaining ></Remaining></div>
+   <div className="displSpent"> <Spent></Spent></div>
+   </div>
+   <div className='displList'><List></List></div>
+   <div className='displAdd'><Addprop></Addprop></div>
     </div>
+    </AppProvider>
   );
 }
 
